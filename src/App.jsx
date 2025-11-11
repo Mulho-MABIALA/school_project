@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import EntrepreneurForm from './EntrepreneurForm'
 
 function App() {
   const [expandedSection, setExpandedSection] = useState('objectif')
@@ -463,86 +464,86 @@ function App() {
   ]
 
   const teamMembers = [
-        {
-          id: 1,
-          name: 'Chef de Projet',
-          role: 'Project Manager',
-          icon: '📋',
-          photo: '',
-          skills: ['Gestion de projet', 'Planification', 'Coordination d\'équipe', 'Suivi budgétaire']
-        },
-        {
-          id: 2,
-          name: 'Architecte Système',
-          role: 'System Architect',
-          icon: '🏗️',
-          photo: '',
-          skills: ['Architecture logicielle', 'Design système', 'Scalabilité', 'Sécurité']
-        },
-        {
-          id: 3,
-          name: 'Lead Frontend',
-          role: 'Frontend Developer',
-          icon: '🎨',
-          photo: '',
-          skills: ['React/Angular', 'UI/UX Design', 'Responsive Design', 'Performance']
-        },
-        {
-          id: 4,
-          name: 'Lead Backend',
-          role: 'Backend Developer',
-          icon: '⚙️',
-          photo: '',
-          skills: ['Node.js/Django/Laravel', 'API REST', 'Bases de données', 'Optimisation']
-        },
-        {
-          id: 5,
-          name: 'DBA (Database Administrator)',
-          role: 'Database Specialist',
-          icon: '🗄️',
-          photo: '',
-          skills: ['MySQL', 'PostgreSQL', 'Optimisation requêtes', 'Sauvegardes']
-        },
-        {
-          id: 6,
-          name: 'Spécialiste Sécurité',
-          role: 'Security Engineer',
-          icon: '🔐',
-          photo: '',
-          skills: ['RGPD', 'Chiffrement', 'Authentification', 'Audit sécurité']
-        },
-        {
-          id: 7,
-          name: 'QA Lead',
-          role: 'Quality Assurance',
-          icon: '✅',
-          photo: '',
-          skills: ['Tests automatisés', 'Tests manuels', 'Reporting bugs', 'Performance testing']
-        },
-        {
-          id: 8,
-          name: 'DevOps Engineer',
-          role: 'DevOps Specialist',
-          icon: '🚀',
-          photo: '',
-          skills: ['CI/CD', 'Docker', 'AWS/Azure', 'Monitoring']
-        },
-        {
-          id: 9,
-          name: 'Développeur Frontend',
-          role: 'Frontend Developer',
-          icon: '💻',
-          photo: '',
-          skills: ['ReactJS', 'Tailwind CSS', 'JavaScript', 'Intégration API']
-        },
-        {
-          id: 10,
-          name: 'Développeur Backend',
-          role: 'Backend Developer',
-          icon: '🔧',
-          photo: '',
-          skills: ['Node.js/Python', 'REST API', 'Intégration BDD', 'Logique métier']
-        }
+        // {
+        //   id: 1,
+        //   name: 'Chef de Projet',
+        //   role: 'Project Manager',
+        //   icon: '📋',
+        //   photo: '',
+        //   skills: ['Gestion de projet', 'Planification', 'Coordination d\'équipe', 'Suivi budgétaire']
+        // },
+        // {
+        //   id: 2,
+        //   name: 'Architecte Système',
+        //   role: 'System Architect',
+        //   icon: '🏗️',
+        //   photo: '',
+        //   skills: ['Architecture logicielle', 'Design système', 'Scalabilité', 'Sécurité']
+        // },
+        // {
+        //   id: 3,
+        //   name: 'Lead Frontend',
+        //   role: 'Frontend Developer',
+        //   icon: '🎨',
+        //   photo: '',
+        //   skills: ['React/Angular', 'UI/UX Design', 'Responsive Design', 'Performance']
+        // },
+        // {
+        //   id: 4,
+        //   name: 'Lead Backend',
+        //   role: 'Backend Developer',
+        //   icon: '⚙️',
+        //   photo: '',
+        //   skills: ['Node.js/Django/Laravel', 'API REST', 'Bases de données', 'Optimisation']
+        // },
+        // {
+        //   id: 5,
+        //   name: 'DBA (Database Administrator)',
+        //   role: 'Database Specialist',
+        //   icon: '🗄️',
+        //   photo: '',
+        //   skills: ['MySQL', 'PostgreSQL', 'Optimisation requêtes', 'Sauvegardes']
+        // },
+        // {
+        //   id: 6,
+        //   name: 'Spécialiste Sécurité',
+        //   role: 'Security Engineer',
+        //   icon: '🔐',
+        //   photo: '',
+        //   skills: ['RGPD', 'Chiffrement', 'Authentification', 'Audit sécurité']
+        // },
+        // {
+        //   id: 7,
+        //   name: 'QA Lead',
+        //   role: 'Quality Assurance',
+        //   icon: '✅',
+        //   photo: '',
+        //   skills: ['Tests automatisés', 'Tests manuels', 'Reporting bugs', 'Performance testing']
+        // },
+        // {
+        //   id: 8,
+        //   name: 'DevOps Engineer',
+        //   role: 'DevOps Specialist',
+        //   icon: '🚀',
+        //   photo: '',
+        //   skills: ['CI/CD', 'Docker', 'AWS/Azure', 'Monitoring']
+        // },
+        // {
+        //   id: 9,
+        //   name: 'Développeur Frontend',
+        //   role: 'Frontend Developer',
+        //   icon: '💻',
+        //   photo: '',
+        //   skills: ['ReactJS', 'Tailwind CSS', 'JavaScript', 'Intégration API']
+        // },
+        // {
+        //   id: 10,
+        //   name: 'Développeur Backend',
+        //   role: 'Backend Developer',
+        //   icon: '🔧',
+        //   photo: '',
+        //   skills: ['Node.js/Python', 'REST API', 'Intégration BDD', 'Logique métier']
+        // }
   ]
 
   // Page équipe
@@ -1045,6 +1046,31 @@ function App() {
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Formulaire Entrepreneur Section */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="mb-8 text-center">
+          <h2 className={`text-3xl font-bold mb-4 transition-colors ${
+            isDarkMode ? 'text-white' : 'text-slate-900'
+          }`}>
+            📝 {language === 'fr' ? 'Donner votre Avis' : 'Share Your Feedback'}
+          </h2>
+          <p className={`text-lg transition-colors ${
+            isDarkMode ? 'text-slate-400' : 'text-slate-600'
+          }`}>
+            {language === 'fr'
+              ? 'Votre feedback est important pour nous. Partagez votre avis ou faites une proposition.'
+              : 'Your feedback is important to us. Share your opinion or make a proposal.'}
+          </p>
+        </div>
+        <div className="max-w-2xl mx-auto">
+          <EntrepreneurForm
+            isDarkMode={isDarkMode}
+            language={language}
+            onClose={() => {}}
+          />
         </div>
       </section>
 
