@@ -295,6 +295,7 @@ function App() {
         'Gestion des notes et compétences : saisie des évaluations, liaison aux compétences, calcul des moyennes, bulletins',
         'Gestion des bulletins scolaires : génération automatique, diffusion numérique, commentaires personnalisés',
         'Gestion administrative : suivi des paiements, facturation, sanctions disciplinaires',
+        'Gestion des modes de paiement : interface intuitive style Wave, paiements mobiles (Orange Money, MTN Money, Moov Money), cartes bancaires, virements, espèces, historique des transactions, reçus numériques',
         'Communication intégrée : messagerie interne, notifications par SMS/email, forums, alertes',
         'Tableaux de bord : statistiques globales, suivi pédagogique, absentéisme, performances',
         'Gestion des ressources matérielles : réservation de salles, équipements, inventaires',
@@ -387,6 +388,25 @@ function App() {
           title: 'Administration et finances',
           items: [
             'Paiements, facturation, gestion disciplinaire'
+          ]
+        },
+        {
+          title: 'Gestion des modes de paiement (Interface style Wave)',
+          items: [
+            'Interface utilisateur moderne et intuitive inspirée de Wave',
+            'Paiements mobiles : Orange Money, MTN Money, Moov Money',
+            'Paiements par carte bancaire (Visa, Mastercard)',
+            'Virements bancaires et paiements en espèces',
+            'QR Code pour paiements rapides',
+            'Historique complet des transactions avec filtres avancés',
+            'Génération automatique de reçus numériques (PDF)',
+            'Notifications instantanées de confirmation de paiement',
+            'Tableau de bord financier avec graphiques et statistiques',
+            'Gestion des échéances et rappels automatiques',
+            'Paiements fractionnés et plans de paiement personnalisés',
+            'Sécurité renforcée avec authentification à deux facteurs',
+            'Export des données financières (Excel, PDF)',
+            'Intégration API des opérateurs mobiles'
           ]
         },
         {
