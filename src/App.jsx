@@ -290,8 +290,9 @@ function App() {
       items: [
         'Gestion des élèves : inscriptions, dossiers, présences, historique scolaire',
         'Gestion des enseignants : affectations, emplois du temps, notes, planification',
-        'Gestion des employés : liste des employés, gestion des postes, planification des horaires, gestion de la paie, gestion du pointage avec badgeuse, suivi des présences, gestion des badges',
-        'Gestion des classes et matières : création, association enseignants-classes, matières',
+        'Gestion des employés (Gestion RH) : liste des employés, gestion des postes, planification des horaires, gestion de la paie, gestion du pointage avec badgeuse, suivi des présences, gestion des badges',
+        'Gestion des classes : création des classes, affectation des élèves, association enseignants-classes, gestion des niveaux',
+        'Gestion des matières : création des matières, affectation aux classes, coefficients, programmes scolaires',
         'Gestion des notes et compétences : saisie des évaluations, liaison aux compétences, calcul des moyennes, bulletins',
         'Gestion des bulletins scolaires : génération automatique, diffusion numérique, commentaires personnalisés',
         'Gestion administrative : suivi des paiements, facturation, sanctions disciplinaires',
@@ -331,7 +332,7 @@ function App() {
         'Administrateur général',
         'Secrétaire',
         'Enseignants',
-        'Employés non enseignants',
+        'Personnel',
         'Élèves',
         'Parents',
         'Responsable de classe'
@@ -369,13 +370,15 @@ function App() {
           ]
         },
         {
-          title: 'Gestion des employés',
+          title: 'Gestion des employés (Gestion RH)',
           items: [
             'Liste complète des employés et fiches individuelles',
             'Gestion des postes et rôles',
             'Planification horaires, gestion paie, pointage automatisé par badgeuse',
             'Gestion des badges d\'accès',
-            'Suivi des congés, absences, remplacements'
+            'Suivi des congés, absences, remplacements',
+            'Contrats de travail et documents administratifs',
+            'Évaluations et formations du personnel'
           ]
         },
         {
