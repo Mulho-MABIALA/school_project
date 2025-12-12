@@ -24,14 +24,14 @@ function App() {
       courseSpecs: 'Cahier des Charges',
       teamPage: 'Équipe',
       ourTeam: 'Notre Équipe',
-      teamDesc: '10 experts passionnés par l\'excellence',
+      teamDesc: '3 experts passionnés par l\'excellence',
       overview: 'Aperçu du Projet',
       sections: 'Sections Principales',
       modules: 'Modules Détaillés',
       users: 'Profils Utilisateurs',
       teamMembers: 'Membres Équipe',
       seeFullTeam: '👥 Voir l\'équipe complète',
-      teamExperts: 'Découvrez les 10 experts qui pilotent ce projet',
+      teamExperts: 'Découvrez les 3 experts qui pilotent ce projet',
       error: 'Mot de passe incorrect',
       screenCapture: 'Tentative de capture détectée !',
       screenshotBlocked: 'Les captures d\'écran et l\'enregistrement sont interdits.\nCette action a été enregistrée.',
@@ -53,14 +53,14 @@ function App() {
       courseSpecs: 'Course Specifications',
       teamPage: 'Team',
       ourTeam: 'Our Team',
-      teamDesc: '10 experts passionate about excellence',
+      teamDesc: '3 experts passionate about excellence',
       overview: 'Project Overview',
       sections: 'Main Sections',
       modules: 'Detailed Modules',
       users: 'User Profiles',
       teamMembers: 'Team Members',
       seeFullTeam: '👥 View Full Team',
-      teamExperts: 'Discover the 10 experts driving this project',
+      teamExperts: 'Discover the 3 experts driving this project',
       error: 'Incorrect password',
       screenCapture: 'Screenshot Attempt Detected!',
       screenshotBlocked: 'Screenshots and recordings are prohibited.\nThis action has been logged.',
@@ -524,86 +524,30 @@ function App() {
   ]
 
   const teamMembers = [
-        // {
-        //   id: 1,
-        //   name: 'Chef de Projet',
-        //   role: 'Project Manager',
-        //   icon: '📋',
-        //   photo: '',
-        //   skills: ['Gestion de projet', 'Planification', 'Coordination d\'équipe', 'Suivi budgétaire']
-        // },
-        // {
-        //   id: 2,
-        //   name: 'Architecte Système',
-        //   role: 'System Architect',
-        //   icon: '🏗️',
-        //   photo: '',
-        //   skills: ['Architecture logicielle', 'Design système', 'Scalabilité', 'Sécurité']
-        // },
-        // {
-        //   id: 3,
-        //   name: 'Lead Frontend',
-        //   role: 'Frontend Developer',
-        //   icon: '🎨',
-        //   photo: '',
-        //   skills: ['React/Angular', 'UI/UX Design', 'Responsive Design', 'Performance']
-        // },
-        // {
-        //   id: 4,
-        //   name: 'Lead Backend',
-        //   role: 'Backend Developer',
-        //   icon: '⚙️',
-        //   photo: '',
-        //   skills: ['Node.js/Django/Laravel', 'API REST', 'Bases de données', 'Optimisation']
-        // },
-        // {
-        //   id: 5,
-        //   name: 'DBA (Database Administrator)',
-        //   role: 'Database Specialist',
-        //   icon: '🗄️',
-        //   photo: '',
-        //   skills: ['MySQL', 'PostgreSQL', 'Optimisation requêtes', 'Sauvegardes']
-        // },
-        // {
-        //   id: 6,
-        //   name: 'Spécialiste Sécurité',
-        //   role: 'Security Engineer',
-        //   icon: '🔐',
-        //   photo: '',
-        //   skills: ['RGPD', 'Chiffrement', 'Authentification', 'Audit sécurité']
-        // },
-        // {
-        //   id: 7,
-        //   name: 'QA Lead',
-        //   role: 'Quality Assurance',
-        //   icon: '✅',
-        //   photo: '',
-        //   skills: ['Tests automatisés', 'Tests manuels', 'Reporting bugs', 'Performance testing']
-        // },
-        // {
-        //   id: 8,
-        //   name: 'DevOps Engineer',
-        //   role: 'DevOps Specialist',
-        //   icon: '🚀',
-        //   photo: '',
-        //   skills: ['CI/CD', 'Docker', 'AWS/Azure', 'Monitoring']
-        // },
-        // {
-        //   id: 9,
-        //   name: 'Développeur Frontend',
-        //   role: 'Frontend Developer',
-        //   icon: '💻',
-        //   photo: '',
-        //   skills: ['ReactJS', 'Tailwind CSS', 'JavaScript', 'Intégration API']
-        // },
-        // {
-        //   id: 10,
-        //   name: 'Développeur Backend',
-        //   role: 'Backend Developer',
-        //   icon: '🔧',
-        //   photo: '',
-        //   skills: ['Node.js/Python', 'REST API', 'Intégration BDD', 'Logique métier']
-        // }
+        {
+          id: 1,
+          name: 'Chef de Projet',
+          role: 'Project Manager',
+          icon: '📋',
+          photo: '',
+          skills: ['Gestion de projet', 'Planification', 'Coordination équipe', 'Suivi global']
+        },
+        {
+          id: 2,
+          name: 'Développeur Full Stack',
+          role: 'Software Developer',
+          icon: '💻',
+          photo: '',
+          skills: ['Next.js/TypeScript', 'Node.js/Express', 'MongoDB', 'API Development']
+        },
+        {
+          id: 3,
+          name: 'Développeur Full Stack',
+          role: 'Software Developer',
+          icon: '⚙️',
+          photo: '',
+          skills: ['Next.js/TypeScript', 'Node.js/Express', 'MongoDB', 'Intégrations']
+        }
   ]
 
   // Page équipe
@@ -1088,7 +1032,7 @@ function App() {
                       <p className={`transition-colors ${
                         isDarkMode ? 'text-slate-300' : 'text-slate-700'
                       }`}>
-                        Découvrez les 10 experts qui pilotent ce projet
+                        Découvrez les 3 experts qui pilotent ce projet
                       </p>
                       <button
                         onClick={() => setCurrentPage('team')}
@@ -1146,7 +1090,7 @@ function App() {
             { label: t('sections'), value: '9', icon: '📋' },
             { label: t('modules'), value: '20+', icon: '📦' },
             { label: t('users'), value: '7', icon: '👥' },
-            { label: t('teamMembers'), value: '10', icon: '👔' }
+            { label: t('teamMembers'), value: '3', icon: '👔' }
           ].map((stat, idx) => (
             <div
               key={idx}
