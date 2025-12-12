@@ -281,7 +281,7 @@ function App() {
       id: 'objectif',
       title: '1. Contexte et objectif',
       icon: '🎯',
-      content: 'Développer une application web complète permettant d\'automatiser et de faciliter la gestion administrative, pédagogique, financière et organisationnelle d\'un établissement scolaire. L\'objectif est d\'améliorer la productivité, la communication entre acteurs et la qualité du suivi des élèves.'
+      content: 'Dans un monde où le numérique prend de l\'ampleur, où l\'information est à portée de main, il est important de marcher avec l\'évolution technologique. De ce fait, l\'intérêt est de développer une application web complète permettant d\'automatiser et de faciliter la gestion administrative, pédagogique, financière et organisationnelle d\'un établissement scolaire. L\'objectif est d\'améliorer la productivité, la communication entre acteurs et la qualité du suivi des élèves.'
     },
     {
       id: 'modules',
@@ -315,7 +315,7 @@ function App() {
           'Chaque enseignant coche la présence/absence des élèves pour chaque séance',
           'Interface simple et accessible aux enseignants depuis leur compte',
           'Responsable de classe peut consulter, valider et modifier les présences pour sa classe',
-          'Les enseignes remplissent un compte-rendu des chapitres ou thèmes enseignés par séance',
+          'Les enseignants remplissent un cahier de texte des chapitres ou thèmes enseignés par séance',
           'Responsable de classe accède aux suivis pédagogiques consolidés',
           'Notifications et rappels pour assurer la régularité de la saisie',
           'Rapports synthétiques disponibles pour la direction et responsables pédagogiques'
