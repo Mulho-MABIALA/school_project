@@ -442,19 +442,59 @@ function App() {
       subsections: [
         {
           title: 'Frontend',
-          items: ['ReactJS, Angular, intégration chatbot JavaScript côté client']
+          items: [
+            'Next.js : Framework React pour le rendu côté serveur (SSR) et génération de sites statiques (SSG)',
+            'TypeScript : Typage statique pour un code robuste et maintenable',
+            'Tailwind CSS : Framework CSS utilitaire pour un design moderne et responsive',
+            'Intégration chatbot JavaScript côté client pour assistance en temps réel'
+          ]
         },
         {
-          title: 'Côté serveur',
-          items: ['Node.js, Django, Laravel']
+          title: 'Côté serveur (Backend)',
+          items: [
+            'Node.js : Environnement d\'exécution JavaScript haute performance',
+            'Express.js : Framework web minimaliste et flexible pour Node.js',
+            'API RESTful : Architecture pour la communication entre frontend et backend',
+            'JWT (JSON Web Tokens) : Authentification sécurisée des utilisateurs',
+            'Socket.io : Communication en temps réel pour notifications et messagerie'
+          ]
         },
         {
           title: 'Base de données',
-          items: ['MySQL, PostgreSQL']
+          items: [
+            'MongoDB : Base de données NoSQL orientée documents',
+            'Mongoose : ODM (Object Data Modeling) pour MongoDB et Node.js',
+            'Structure flexible pour gérer des données complexes et évolutives',
+            'Indexation optimisée pour performances élevées'
+          ]
         },
         {
-          title: 'Hébergement',
-          items: ['Cloud sécurisé (AWS, Azure, OVH)']
+          title: 'Intégrations et APIs',
+          items: [
+            'API Orange Money, MTN Money, Moov Money pour paiements mobiles',
+            'API de paiement par carte bancaire (Stripe, PayPal)',
+            'API SMS pour notifications (Twilio, Nexmo)',
+            'API Email (SendGrid, Mailgun)'
+          ]
+        },
+        {
+          title: 'Hébergement et DevOps',
+          items: [
+            'Cloud sécurisé : AWS, Azure, Google Cloud ou OVH',
+            'Docker : Conteneurisation pour déploiement simplifié',
+            'CI/CD : Intégration et déploiement continus',
+            'Monitoring : Outils de surveillance et logging (PM2, Winston)'
+          ]
+        },
+        {
+          title: 'Sécurité',
+          items: [
+            'HTTPS/SSL : Chiffrement des communications',
+            'Authentification à deux facteurs (2FA)',
+            'Hashage des mots de passe (bcrypt)',
+            'Protection contre XSS, CSRF, injection SQL',
+            'Conformité RGPD'
+          ]
         }
       ]
     },
