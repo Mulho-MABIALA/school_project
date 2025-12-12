@@ -325,8 +325,74 @@ function App() {
       }
     },
     {
+      id: 'priorites',
+      title: '3. Fonctionnalités prioritaires et roadmap',
+      icon: '🚀',
+      subsections: [
+        {
+          title: 'Phase 1 - MVP (Produit Minimum Viable) - 4 mois',
+          items: [
+            '✅ MUST HAVE - Authentification et gestion des rôles : Login sécurisé, gestion des permissions Admin/Enseignant/Parent/Élève',
+            '✅ MUST HAVE - Gestion des élèves (CRUD) : Inscription, modification, consultation des dossiers',
+            '✅ MUST HAVE - Gestion des classes : Création, affectation des élèves, gestion des niveaux',
+            '✅ MUST HAVE - Gestion des matières : Création des matières, affectation aux classes, coefficients',
+            '✅ MUST HAVE - Saisie et consultation des notes : Interface enseignant pour saisir notes, calcul moyennes automatique',
+            '✅ MUST HAVE - Génération bulletins PDF : Bulletins basiques avec notes et moyennes par matière',
+            '✅ MUST HAVE - Dashboard de base : Vue d\'ensemble pour admin, enseignants, parents',
+            '⚡ Objectif : Système fonctionnel pour gérer le cycle notes → bulletins'
+          ]
+        },
+        {
+          title: 'Phase 2 - Gestion financière et présences - 3 mois',
+          items: [
+            '🔶 SHOULD HAVE - Gestion des présences : Saisie par enseignant, validation responsable de classe, alertes absences',
+            '🔶 SHOULD HAVE - Cahier de texte : Enseignants saisissent chapitres/thèmes enseignés par séance',
+            '🔶 SHOULD HAVE - Paiements basiques : Enregistrement paiements espèces, suivi frais scolaires',
+            '🔶 SHOULD HAVE - Reçus numériques PDF : Génération automatique de reçus',
+            '🔶 SHOULD HAVE - Historique des paiements : Consultation par parent/admin',
+            '🔶 SHOULD HAVE - Gestion des enseignants : Affectations, emplois du temps basiques',
+            '⚡ Objectif : Ajout suivi pédagogique et gestion financière de base'
+          ]
+        },
+        {
+          title: 'Phase 3 - Paiements avancés et communication - 3 mois',
+          items: [
+            '🔷 COULD HAVE - Interface paiement style Wave : UI moderne et intuitive',
+            '🔷 COULD HAVE - Intégration Orange Money : API paiement mobile',
+            '🔷 COULD HAVE - Intégration MTN Money et Moov Money : Paiements mobiles complets',
+            '🔷 COULD HAVE - Messagerie interne : Communication enseignants-parents-admin',
+            '🔷 COULD HAVE - Notifications SMS/Email : Alertes automatiques (notes, absences, paiements)',
+            '🔷 COULD HAVE - Tableaux de bord avancés : Statistiques, graphiques, analyses',
+            '⚡ Objectif : Système de paiement moderne et communication intégrée'
+          ]
+        },
+        {
+          title: 'Phase 4 - Modules avancés - 3 mois',
+          items: [
+            '⭕ WON\'T HAVE (v1) - Gestion RH complète : Paie, badgeuse, congés (reporté en v2)',
+            '⭕ WON\'T HAVE (v1) - Gestion ressources matérielles : Salles, équipements (reporté en v2)',
+            '⭕ WON\'T HAVE (v1) - Chatbot avancé : Assistant IA (reporté en v2)',
+            '⭕ WON\'T HAVE (v1) - Gestion santé scolaire : Dossiers médicaux (reporté en v2)',
+            '⭕ WON\'T HAVE (v1) - Forums et espaces collaboratifs : (reporté en v2)',
+            '⚡ Note : Ces fonctionnalités seront développées dans les versions futures selon retours utilisateurs'
+          ]
+        },
+        {
+          title: 'Critères de succès par phase',
+          items: [
+            'Phase 1 MVP : 80% des enseignants saisissent notes régulièrement, bulletins générés pour 100% élèves',
+            'Phase 2 : 90% des présences saisies quotidiennement, 70% des paiements enregistrés dans système',
+            'Phase 3 : 50% des paiements via mobile money, taux satisfaction utilisateurs > 4/5',
+            'Adoption globale : 85% utilisateurs actifs après 3 mois de déploiement complet',
+            'Performance : 95% des pages chargent en < 2 secondes',
+            'Disponibilité : 99.5% uptime mensuel'
+          ]
+        }
+      ]
+    },
+    {
       id: 'acteurs',
-      title: '3. Acteurs et profils utilisateurs',
+      title: '4. Acteurs et profils utilisateurs',
       icon: '👥',
       items: [
         'Administrateur général',
@@ -340,7 +406,7 @@ function App() {
     },
     {
       id: 'fonctionnalites',
-      title: '4. Fonctionnalités détaillées',
+      title: '5. Fonctionnalités détaillées',
       icon: '⚙️',
       subsections: [
         {
@@ -433,18 +499,65 @@ function App() {
     },
     {
       id: 'contraintes',
-      title: '5. Contraintes techniques et réglementaires',
+      title: '6. Contraintes techniques et réglementaires',
       icon: '🔒',
-      items: [
-        'Sécurité renforcée, conformité RGPD',
-        'Sauvegardes fiables, restauration rapide',
-        'Architecture modulaire accessible mobile et PC',
-        'Norme internationale d\'internationalisation'
+      subsections: [
+        {
+          title: 'Contraintes de performance',
+          items: [
+            'Temps de réponse API : < 200ms pour 95% des requêtes',
+            'Temps de chargement page : < 2 secondes',
+            'Génération bulletin PDF : < 3 secondes',
+            'Support de 500-1000 utilisateurs simultanés (Phase 1)',
+            'Disponibilité système : 99.5% (uptime)'
+          ]
+        },
+        {
+          title: 'Contraintes de sécurité et RGPD',
+          items: [
+            'Chiffrement AES-256 pour données sensibles (notes, informations médicales)',
+            'Conformité RGPD : Consentement parental pour mineurs, droit à l\'oubli',
+            'Journaux d\'audit : Traçabilité complète des accès et modifications',
+            'Politique de rétention : Archivage données après 5 ans, suppression après 10 ans',
+            'Anonymisation : Données anonymisées pour statistiques et rapports',
+            'Sauvegarde chiffrée quotidienne avec rétention de 30 jours'
+          ]
+        },
+        {
+          title: 'Contraintes réglementaires',
+          items: [
+            'Protection des données des mineurs selon RGPD',
+            'Stockage des données en Europe (GDPR compliance)',
+            'Certification hébergeur (ISO 27001 recommandé)',
+            'Plan de continuité d\'activité (PCA) et disaster recovery'
+          ]
+        },
+        {
+          title: 'Règles métier critiques',
+          items: [
+            'Une note ne peut être modifiée que par l\'enseignant qui l\'a saisie',
+            'Les présences doivent être validées par le responsable de classe',
+            'Un élève ne peut être inscrit que dans une seule classe par année scolaire',
+            'Les bulletins ne peuvent être générés qu\'après clôture des notes du trimestre',
+            'Les paiements nécessitent une double confirmation (utilisateur + système)',
+            'Changement de classe en cours d\'année : conservation de l\'historique complet'
+          ]
+        },
+        {
+          title: 'Accessibilité et compatibilité',
+          items: [
+            'Interface responsive : Support desktop (1920x1080) et mobile (360x640)',
+            'Navigateurs supportés : Chrome 90+, Firefox 88+, Safari 14+, Edge 90+',
+            'Progressive Web App (PWA) : Utilisation offline partielle',
+            'Norme WCAG 2.1 niveau AA pour accessibilité',
+            'Support multilingue : Français, Anglais, langue locale configurable'
+          ]
+        }
       ]
     },
     {
       id: 'technologies',
-      title: '6. Technologies proposées',
+      title: '7. Technologies proposées',
       icon: '💻',
       subsections: [
         {
@@ -502,12 +615,67 @@ function App() {
             'Protection contre XSS, CSRF, injection SQL',
             'Conformité RGPD'
           ]
+        },
+        {
+          title: 'Tests et Qualité',
+          items: [
+            'Tests unitaires : Jest pour le backend Node.js, couverture minimale de 70%',
+            'Tests d\'intégration : Tests des APIs avec Supertest',
+            'Tests E2E : Cypress ou Playwright pour les parcours utilisateurs critiques',
+            'Tests de performance : Artillery ou k6 pour tester la charge',
+            'Code review obligatoire : Validation par le second développeur avant merge',
+            'Analyse statique : ESLint et Prettier pour la qualité du code',
+            'Git hooks : Pre-commit avec Husky pour vérifications automatiques',
+            'Tests de régression : Suite de tests automatisés après chaque déploiement'
+          ]
+        },
+        {
+          title: 'Architecture technique détaillée',
+          items: [
+            'Architecture MVC : Séparation Models, Controllers, Routes',
+            'Middleware personnalisés : Authentification, validation, gestion erreurs',
+            'Gestion d\'état frontend : React Context API + useReducer ou Zustand',
+            'API versionnée : /api/v1 pour faciliter les évolutions futures',
+            'Pagination : Limit/offset pour toutes les listes (max 50 items par page)',
+            'Cache : Redis pour sessions et données fréquentes',
+            'File upload : Multer avec stockage AWS S3 ou Cloudinary',
+            'Génération PDF : PDFKit ou Puppeteer pour bulletins et rapports',
+            'Websockets : Socket.io pour notifications temps réel',
+            'Job scheduling : Node-cron pour tâches planifiées (emails, rappels)'
+          ]
+        },
+        {
+          title: 'Modèles de données principaux (MongoDB)',
+          items: [
+            'Collection Users : {email, password, role, profile, createdAt}',
+            'Collection Students : {userId, classId, enrollmentDate, parentIds, medicalInfo}',
+            'Collection Teachers : {userId, subjects[], availabilities, hireDate}',
+            'Collection Classes : {name, level, academicYear, teacherId, students[]}',
+            'Collection Grades : {studentId, subjectId, value, coefficient, date, teacherId}',
+            'Collection Attendance : {studentId, classId, date, status, teacherId}',
+            'Collection Payments : {studentId, amount, method, status, transactionId, date}',
+            'Index optimisés : Champs fréquents (studentId, classId, date) indexés'
+          ]
+        },
+        {
+          title: 'API Routes principales',
+          items: [
+            'POST /api/v1/auth/login - Authentification utilisateur',
+            'GET /api/v1/students - Liste paginée des élèves',
+            'POST /api/v1/students - Création nouvel élève',
+            'PUT /api/v1/students/:id - Modification élève',
+            'GET /api/v1/grades/student/:id - Notes d\'un élève',
+            'POST /api/v1/grades - Saisie de notes',
+            'GET /api/v1/attendance/class/:id - Présences d\'une classe',
+            'POST /api/v1/payments - Enregistrement paiement',
+            'GET /api/v1/reports/bulletin/:studentId - Génération bulletin PDF'
+          ]
         }
       ]
     },
     {
       id: 'planification',
-      title: '7. Planification prévisionnelle',
+      title: '8. Planification prévisionnelle',
       icon: '📅',
       items: [
         'Analyse : 2-3 semaines',
@@ -519,13 +687,13 @@ function App() {
     },
     {
       id: 'budget',
-      title: '8. Budget',
+      title: '9. Budget',
       icon: '💰',
       content: 'À affiner selon les options et ressources.'
     },
     {
       id: 'equipe',
-      title: '9. Équipe du Projet',
+      title: '10. Équipe du Projet',
       icon: '👔'
     }
   ]
@@ -1094,7 +1262,7 @@ function App() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {[
-            { label: t('sections'), value: '9', icon: '📋' },
+            { label: t('sections'), value: '10', icon: '📋' },
             { label: t('modules'), value: '20+', icon: '📦' },
             { label: t('users'), value: '7', icon: '👥' },
             { label: t('teamMembers'), value: '3', icon: '👔' }
