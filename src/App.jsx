@@ -289,11 +289,11 @@ function App() {
       icon: '📦',
       items: [
         'Gestion des élèves : inscriptions, dossiers, présences, historique scolaire',
-        'Gestion des enseignants : affectations, emplois du temps, notes, planification',
+        'Gestion des enseignants : affectations, emplois du temps, planification des cours, disponibilités',
         'Gestion des employés (Gestion RH) : liste des employés, gestion des postes, planification des horaires, gestion de la paie, gestion du pointage avec badgeuse, suivi des présences, gestion des badges',
         'Gestion des classes : création des classes, affectation des élèves, association enseignants-classes, gestion des niveaux',
         'Gestion des matières : création des matières, affectation aux classes, coefficients, programmes scolaires',
-        'Gestion des notes et compétences : saisie des évaluations, liaison aux compétences, calcul des moyennes, bulletins',
+        'Gestion des notes et compétences : saisie des notes, évaluations, liaison aux compétences, calcul des moyennes, bulletins',
         'Gestion des bulletins scolaires : génération automatique, diffusion numérique, commentaires personnalisés',
         'Gestion administrative : suivi des paiements, facturation, sanctions disciplinaires',
         'Gestion des modes de paiement : interface intuitive style Wave, paiements mobiles (Orange Money, MTN Money, Moov Money), cartes bancaires, virements, espèces, historique des transactions, reçus numériques',
@@ -352,21 +352,25 @@ function App() {
           ]
         },
         {
-          title: 'Gestion des enseignants et notes',
+          title: 'Gestion des enseignants',
           items: [
-            'Planification des cours et affectations',
-            'Saisie des notes, évaluation par compétences, calculs automatiques',
-            'Edition, personnalisation et envoi des bulletins avec liaison des notes aux compétences et commentaires individualisés'
+            'Planification des cours et affectations aux classes',
+            'Gestion des emplois du temps des enseignants',
+            'Suivi des disponibilités et absences',
+            'Attribution des matières et niveaux d\'enseignement',
+            'Historique des affectations et performances'
           ]
         },
         {
-          title: 'Règles de calcul des moyennes et compétences',
+          title: 'Gestion des notes et compétences',
           items: [
             'Saisie des notes par évaluation avec coefficient paramétrable',
+            'Évaluation par compétences et calculs automatiques',
             'Calcul automatique des moyennes par matière et compétence',
             'Prise en compte des absences, rattrapages, règles spécifiques',
             'Bulletins générés avec synthèses et historiques des progrès',
-            'Notifications automatiques en cas de résultats critiques'
+            'Notifications automatiques en cas de résultats critiques',
+            'Édition, personnalisation et envoi des bulletins avec commentaires individualisés'
           ]
         },
         {
